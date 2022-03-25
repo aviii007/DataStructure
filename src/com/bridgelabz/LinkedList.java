@@ -25,6 +25,19 @@ public class LinkedList {
         System.out.println("Welcome to the Linked list program");
 
     }
+
+    //add-first
+    public void addFirst(String data) {  //function is addFirst and String Data is parameter
+        Node newNode = new Node(data);  //creating node
+        if (head == null) {
+            head = newNode; //assign new node value to head
+            return;
+        }
+
+        newNode.next = head; //new node will point head
+        head = newNode; //head value will become new node
+
+    }
 }
 
 
