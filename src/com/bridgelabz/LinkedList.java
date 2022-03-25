@@ -99,6 +99,10 @@ public class LinkedList {
 
         secondLast.next = null;
     }
+    public int getSize(){  //function to return the size
+
+        return  size;
+    }
 }
 
 
