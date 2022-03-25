@@ -1,6 +1,25 @@
 package com.bridgelabz;
 
 public class LinkedList {
+    Node head; //creating the head node
+    public int size;
+
+    //constructor of class
+    LinkedList(){
+        this.size = 0;  //initializing the size as zero
+    }
+    //Node class
+    public class Node{
+        String data;
+        Node next;
+
+        //Constructor
+        Node(String data){
+            this.data = data;
+            this.next = null; //for every new node its next will be null by default
+            size++;  //do size++ when creating the new node
+        }
+    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Linked list program");
