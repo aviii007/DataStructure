@@ -68,8 +68,8 @@ public class LinkedList {
             return;
         }
 
-        newNode.next = head; //new node will point head
-        head = newNode; //head value will become new node
+       newNode.next = head; //new node will point head
+       head = newNode; //head value will become new node
 
     }
     //add-last
