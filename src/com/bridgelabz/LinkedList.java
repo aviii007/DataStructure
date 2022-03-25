@@ -23,6 +23,17 @@ public class LinkedList {
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Linked list program");
+        System.out.println(" ");
+        LinkedList list = new LinkedList(); //object for LinkedList class and initialised list with LinkedList
+
+
+        list.addFirst("is"); //added is and null
+        list.printList();
+        System.out.println("--------------");
+
+        list.addFirst("name"); //due to addFirst before is comes name
+        list.printList();
+        System.out.println("---------------");
 
     }
 
