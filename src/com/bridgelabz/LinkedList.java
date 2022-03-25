@@ -54,6 +54,20 @@ public class LinkedList {
         currNode.next = newNode;
 
     }
+    //print
+    public void printList(){
+        if(head == null){
+            System.out.println("list is empty");
+            return;
+        }
+
+        Node currNode = head;
+        while(currNode != null) {
+            System.out.print(currNode.data  + "->");
+            currNode = currNode.next;
+        }
+        System.out.println("NULL");
+    }
 }
 
 
