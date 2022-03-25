@@ -38,6 +38,22 @@ public class LinkedList {
         head = newNode; //head value will become new node
 
     }
+    //add-last
+    public void addLast(String data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+
+        Node currNode = head;
+        while(currNode.next != null){ //travel untill current node's next become null
+            currNode = currNode.next;
+        }
+
+        currNode.next = newNode;
+
+    }
 }
 
 
