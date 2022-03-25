@@ -68,6 +68,15 @@ public class LinkedList {
         }
         System.out.println("NULL");
     }
+    //delete-first
+    public void deleteFirst() {
+        if(head == null) {
+            System.out.println("The list is empty");
+            return;
+        }
+        size--; //do size-- when deleting the node
+        head = head.next;  //if we need to delete first then make first's next its head
+    }
 }
 
 
